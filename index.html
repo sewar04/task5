@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasl.3 29/11</title>
+    <style>
+        
+        a {
+            margin: 10%;
+            text-decoration: none;
+            color: green;
+            border: 2px solid green;
+            padding: 10px 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        a:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .list {
+            background-color: rgb(237, 237, 49);
+            padding: 10px;
+            width:auto;  
+        } 
+        .list ul{
+             list-style-type: square ;
+             color: #000000;
+             padding-left: 20px;
+        }
+        .list ul li{
+            font-size: 15px;
+        }
+        .list ul li::marker{
+            color: #a43b3b;
+        }
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .heading-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 50px; 
+        }
+
+        .heading-container img {
+            width: 150px; 
+            height: 300px; 
+            object-fit: cover;
+            margin-right: 20px; 
+        }
+
+        .heading-container .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading-container h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+
+        .heading-container p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">This is a link</a>
+    <div class="list">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+    </div>
+
+    <div class="heading-container">
+        <img src="autumn-7438675_640.jpg" alt="autumn">
+        <div class="text">
+            <h1>This is a heading</h1>
+            <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+        </div>
+    </div>
+</body>
+</html>
